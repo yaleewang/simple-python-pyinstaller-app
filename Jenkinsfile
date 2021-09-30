@@ -18,7 +18,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'python -m pythest --verbose --junit-xml test-reports/results.xml sources/test_calc.py'
+                sh 'python3 -m pythest --verbose --junit-xml test-reports/results.xml sources/test_calc.py'
             }
             post {
                 always {
